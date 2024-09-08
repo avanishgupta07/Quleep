@@ -17,7 +17,7 @@ function UserTable() {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/users');
+      const response = await fetch('https://quleep-181r.onrender.com/api/users');
       if (!response.ok) throw new Error('Network response was not ok');
       const result = await response.json();
       setUsers(result);
@@ -45,7 +45,7 @@ function UserTable() {
 
   const handleDelete = async (userId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/users/${userId}`, {
+      const response = await fetch(`https://quleep-181r.onrender.com/api/users/${userId}`, {
         method: 'DELETE',
       });
 
@@ -62,7 +62,7 @@ function UserTable() {
 
   const handleCreate = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/register', {
+      const response = await fetch('https://quleep-181r.onrender.com/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -88,7 +88,7 @@ function UserTable() {
 
   const handleUpdate = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/users/${editingUser._id}`, {
+      const response = await fetch(`https://quleep-181r.onrender.com/api/users/${editingUser._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

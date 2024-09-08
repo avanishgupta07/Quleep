@@ -17,7 +17,7 @@ function RegisterForm() {
     e.preventDefault();
     setError('');
     try {
-      const response = await axios.post('http://localhost:5000/api/register', { name, dob, email, password, role });
+      const response = await axios.post('https://quleep-181r.onrender.com/api/register', { name, dob, email, password, role });
       localStorage.setItem('user', JSON.stringify(response.data));
       navigate('/users');
     } catch (error) {
