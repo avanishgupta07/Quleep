@@ -119,9 +119,9 @@ function UserTable() {
 
   return (
   <div>
-    <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '2rem', color: '#111' }}>
+    {/* <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '2rem', color: '#111' }}>
   This is CRUD operation Table
-</h1>
+</h1> */}
     <div className="user-table-container">
      
       <h2 className="mb-4">User Table</h2>

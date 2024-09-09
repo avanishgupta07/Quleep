@@ -68,3 +68,80 @@ body {
     color: #dc3545;
   }
   
+
+  .user-table-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .table {
+      font-size: 0.9rem;
+    }
+  
+    .table th, .table td {
+      padding: 8px;
+    }
+  
+    .status-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+  
+    .modal-body {
+      padding: 10px;
+    }
+  
+    .form-control {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .table {
+      font-size: 0.8rem;
+    }
+  
+    .table th, .table td {
+      padding: 6px;
+    }
+  
+    .modal-title {
+      font-size: 1.2rem;
+    }
+  
+    .modal-body {
+      padding: 5px;
+    }
+  
+    .form-control {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .status-active {
+    background-color: #28a745;
+  }
+  
+  .status-inactive {
+    background-color: #ffc107;
+  }
+  
+  .status-suspended {
+    background-color: #dc3545;
+  }
+  
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
